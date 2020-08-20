@@ -1,0 +1,134 @@
+<img ng-src="{{$ctrl.mainImageUrl}}" class="item" />
+
+<h1 style="font-size:2.4em;font-weight:bold;margin-right: 100px; margin-bottom: 30px">{{$ctrl.itemDetailsCICS.description}}</h1>
+
+    <span style="font-size:1.2em;font-weight:bold;">Description</span>
+    <dl>
+      <dd style="margin-right: 100px; margin-bottom:10px">{{$ctrl.itemDetails.description}}</dd>
+    </dl>
+
+<ul class="item-thumbs">
+  <li ng-repeat="img in $ctrl.itemDetails.images">
+    <img ng-src="{{img}}" ng-mouseover="$ctrl.setImage(img)" />
+  </li>
+</ul>
+
+<ul class="specs">
+  <li>
+    <span>Availability</span>
+    <dl>
+      <dt>In Stock</dt>
+      <dd>{{$ctrl.itemDetailsCICS.in_stock}}</dd>
+      <dt>On Order</dt>
+      <dd>{{$ctrl.itemDetailsCICS.on_order}}</dd>
+      <dt>Cost</dt>
+      <dd><span id="currency-default">{{$ctrl.itemDetailsCICS.cost | currency}}</span></dd>
+    </dl>
+  </li>
+  <li>
+    <span>Ships From</span>
+    <dt>City</dt>
+    <dd>{{$ctrl.itemShippingDetailsVSAM.city}}</dd>
+    <dt>State/Province</dt>
+    <dd>{{$ctrl.itemShippingDetailsVSAM.state}}</dd>
+    <dt>Postal Code</dt>
+    <dd>{{$ctrl.itemShippingDetailsVSAM.zipcode}}</dd>
+    <dt>Country</dt>
+    <dd>{{$ctrl.itemShippingDetailsVSAM.country}}</dd>
+  </li>
+  <li>
+    <span>Size and Weight</span>
+    <dl>
+      <dt>Width</dt>
+      <dd>{{$ctrl.itemDeviceDimensionsDB2.DWIDTH}} mm</dd>
+      <dt>Height</dt>
+      <dd>{{$ctrl.itemDeviceDimensionsDB2.DHEIGHT}} mm</dd>
+      <dt>Depth</dt>
+      <dd>{{$ctrl.itemDeviceDimensionsDB2.DDEPTH}} mm</dd>
+      <dt>Weight</dt>
+      <dd>{{$ctrl.itemDeviceDimensionsDB2.DWEIGHT}} grams</dd>
+    </dl>
+  </li>
+  <li>
+      <span>Network Support</span>
+      <dl>
+        <dt>Networks</dt>
+        <dd ng-repeat="availability in $ctrl.itemDetails.availability">{{availability}}</dd>
+      </dl>
+  </li>  
+  <li>
+    <span>Battery</span>
+    <dl>
+      <dt>Type</dt>
+      <dd>{{$ctrl.itemDetails.battery.type}}</dd>
+      <dt>Talk Time</dt>
+      <dd>{{$ctrl.itemDetails.battery.talkTime}}</dd>
+      <dt>Standby time (max)</dt>
+      <dd>{{$ctrl.itemDetails.battery.standbyTime}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Storage and Memory</span>
+    <dl>
+      <dt>RAM</dt>
+      <dd>{{$ctrl.itemDetails.storage.ram}}</dd>
+      <dt>Internal Storage</dt>
+      <dd>{{$ctrl.itemDetails.storage.flash}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Connectivity</span>
+    <dl>
+      <dt>Specs</dt>
+      <dd>{{$ctrl.itemDetails.connectivity.cell}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Android</span>
+    <dl>
+      <dt>OS Version</dt>
+      <dd>{{$ctrl.itemDetails.android.os}}</dd>
+      <dt>UI</dt>
+      <dd>{{$ctrl.itemDetails.android.ui}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Display</span>
+    <dl>
+      <dt>Screen size</dt>
+      <dd>{{$ctrl.itemDetails.display.screenSize}}</dd>
+      <dt>Screen resolution</dt>
+      <dd>{{$ctrl.itemDetails.display.screenResolution}}</dd>
+      <dt>Touch screen</dt>
+      <dd>{{$ctrl.itemDetails.display.touchScreen}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Hardware</span>
+    <dl>
+      <dt>CPU</dt>
+      <dd>{{$ctrl.itemDetails.hardware.cpu}}</dd>
+      <dt>USB</dt>
+      <dd>{{$ctrl.itemDetails.hardware.usb}}</dd>
+      <dt>Audio / headitemDetails jack</dt>
+      <dd>{{$ctrl.itemDetails.hardware.audioJack}}</dd>
+      <dt>FM Radio</dt>
+      <dd>{{$ctrl.itemDetails.hardware.fmRadio}}</dd>
+      <dt>Accelerometer</dt>
+      <dd>{{$ctrl.itemDetails.hardware.accelerometer}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Camera</span>
+    <dl>
+      <dt>Primary</dt>
+      <dd>{{$ctrl.itemDetails.camera.primary}}</dd>
+      <dt>Features</dt>
+      <dd>{{$ctrl.itemDetails.camera.features.join(', ')}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Additional Features</span>
+    <dd>{{$ctrl.itemDetails.additionalFeatures}}</dd>
+  </li>
+</ul>

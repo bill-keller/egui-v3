@@ -1,0 +1,92 @@
+[
+    {
+        "id": "0010", 
+        "imageUrl": "images/items/10.jpg", 
+        "name": "Nexus S", 
+        "snippet": "Fast just got faster with Nexus S. A pure Google experience, Nexus S is the first phone to run Gingerbread (Android 2.3), the fastest version of Android yet."
+    }, 
+    {
+        "id": "0020", 
+        "imageUrl": "images/items/20.jpg", 
+        "name": "DROID Pro by Motorolla", 
+        "snippet": "The next generation of DOES."
+    }, 
+    {
+        "id": "0030", 
+        "imageUrl": "images/items/30.jpg", 
+        "name": "DROID 2 Global by Motorolla", 
+        "snippet": "The first smartphone with a 1.2 GHz processor and global capabilities."
+    }, 
+    {
+        "id": "0040", 
+        "imageUrl": "images/items/40.jpg", 
+        "name": "LG Axis", 
+        "snippet": "Android Powered, Google Maps Navigation, 5 Customizable Home Screens."
+    }, 
+    {
+        "id": "0050", 
+        "imageUrl": "images/items/50.jpg", 
+        "name": "Motorolla BRAVO", 
+        "snippet": "An experience to cheer about."
+    }, 
+    {
+        "id": "0060", 
+        "imageUrl": "images/items/60.jpg", 
+        "name": "Motorolla CHARM", 
+        "snippet": "Motorola CHARM fits easily in your pocket or palm. Includes MOTOBLUR service."
+    }, 
+    {
+        "id": "0070", 
+        "imageUrl": "images/items/70.jpg", 
+        "name": "Motorolla ATRIX 4G", 
+        "snippet": "MOTOROLA ATRIX 4G the world's most powerful smartphone."
+    }, 
+    {
+        "id": "0080", 
+        "imageUrl": "images/items/80.jpg", 
+        "name": "Motorolla DEFY", 
+        "snippet": "Are you ready for everything life throws your way?"
+    }, 
+    {
+        "id": "0090", 
+        "imageUrl": "images/items/90.jpg", 
+        "name": "Motorolla XOOM", 
+        "snippet": "The Next, Next Generation Experience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    }, 
+    {
+        "id": "0100", 
+        "imageUrl": "images/items/100.jpg", 
+        "name": "Samsung Galaxy Tab", 
+        "snippet": "The Samsung Galaxy Tab™ brings you an ultra-mobile entertainment experience through its 7” display, high-power processor and Adobe® Flash® Player compatibility."
+    }, 
+    {
+        "id": "0110", 
+        "imageUrl": "images/items/110.jpg", 
+        "name": "Samsung Gem™", 
+        "snippet": "The Samsung Gem™ brings you everything that you would expect and more from a touch display smart phone – more apps, more features and a more affordable price."
+    }, 
+    {
+        "id": "0120", 
+        "imageUrl": "images/items/120.jpg", 
+        "name": "Samsung Mesmerize™ a Galaxy S™ phone", 
+        "snippet": "The Samsung Mesmerize™ delivers a cinema quality experience like you’ve never seen before. Its innovative 4” touch display technology provides rich picture brilliance,even outdoors"
+    }, 
+    {
+        "id": "0130", 
+        "imageUrl": "images/items/130.jpg", 
+        "name": "Sanyo Zio", 
+        "snippet": "The Sanyo Zio by Kyocera is an Android smartphone with a combination of ultra-sleek styling, strong performance and unprecedented value."
+    }, 
+    {
+        "id": "0140", 
+        "imageUrl": "images/items/140.jpg", 
+        "name": "Samsung Transform™", 
+        "snippet": "The Samsung Transform™ brings you a fun way to customize your Android powered touch screen phone to just the way you like it through your favorite themed “Sprint ID Service Pack”."
+    }, 
+    {
+        "id": "0150", 
+        "imageUrl": "images/items/150.jpg", 
+        "name": "Samsung Showcase™ a Galaxy S™ phone", 
+        "snippet": "The Samsung Showcase™ delivers a cinema quality experience like you’ve never seen before. Its innovative 4” touch display technology provides rich picture brilliance, even outdoors"
+    }
+]

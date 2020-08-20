@@ -1,0 +1,5 @@
+cd ~
+bx login --apikey @apiKey.json 
+bx target --cf 
+cd ~/nodejs_apps/egui-v3
+bx cf push egui-v3 -p .

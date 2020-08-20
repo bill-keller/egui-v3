@@ -1,0 +1,45 @@
+<h1 style="font-size:2.4em;font-weight:bold; margin-left: 40px; margin-right: 50px">Mobile Device Inventory</h1>
+<br>
+<div class="container"   style = "margin-left: 40px; margin-top: 30px">
+  <div class="row">
+    <div class="col-md-3">
+      <!--Sidebar content-->
+
+      <div class="field">
+        <label class="label" style="text-align: left">Search:</label>
+        <p class="control">
+          <input class="input"  style="width: 255px"  type="text" placeholder="search input" ng-model="$ctrl.query">
+        </p>
+      </div>
+
+      <div class="field">
+        <label class="label" style="text-align: left">Sort by:</label>
+        <p class="control">
+          <span class="select" style="width: 255px">
+            <select ng-model="$ctrl.orderProp">
+              <option value="description">Alphabetical</option>
+              <option value="in_stock">Quantity in Stock (low to hi)</option>
+            </select>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-9" >
+      <!--Body content-->
+    	<ul class="items"  style = "margin: 0px" >
+
+    		<li ng-repeat="item in $ctrl.items | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail item-list-item">
+          <a href="#!/items/{{item.item_id}}" class="thumb">
+            <img ng-src="images/items/{{item.item_id}}.jpg"/>
+          </a>
+          <a style="color: #2511FD;font-weight:bold" href="#!/items/{{item.item_id}}">{{item.description}}</a>
+    			<p><span id="currency-default">{{item.cost | currency}}</span><br>
+    		  Qty in stock: {{item.in_stock}}
+          </p>
+    		</li>
+        
+    	</ul>
+    </div>
+  </div>
+</div>
