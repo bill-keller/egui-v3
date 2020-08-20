@@ -25,8 +25,11 @@ angular
 
         // #############################################
         // get inventory details from CICS applicaiton via REST API call to z/OS Connect
-        $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:16598/catalog/items/' + $routeParams.itemId)
-          .then(function(response) {
+        $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:16221/catalog/items/' + $routeParams.itemId,
+          {
+            headers: {Authorization: 'Basic YmtlbGxlcjpwYXNzdzByZA=='},
+          } 
+        ).then(function(response) {
 
             self.itemDetailsCICS = response.data.cics_single_resp.inquire_single.single_item;
 
@@ -34,9 +37,9 @@ angular
 
         // #############################################
         // get shipping information from VSAM file via REST API call to z/OS Connect and DVM
-        $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:17681/catalog_shipping/itemShipping?ITEMID=' + $routeParams.itemId,
+        $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:16221/catalog_shipping/itemShipping?ITEMID=' + $routeParams.itemId,
           {
-            headers: {Authorization: 'Basic Ymt6Y2VlOnBhc3N3MHJk'},
+            headers: {Authorization: 'Basic YmtlbGxlcjpwYXNzdzByZA=='},
           }
         ).then(function(response) {
           
@@ -46,8 +49,11 @@ angular
 
         // #############################################
         // get device dimensions from DB2 z/OS via REST API call to z/OS Connect and DB2 z/OS
-        $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:16598/catalog_device_dimensions/devices/' + $routeParams.itemId)
-        .then(function(response) {
+        $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:16221/catalog_device_dimensions/devices/' + $routeParams.itemId,
+         {
+            headers: {Authorization: 'Basic YmtlbGxlcjpwYXNzdzByZA=='},
+         }  
+        ).then(function(response) {
 
           console.log($routeParams.itemId);
           self.itemDeviceDimensionsDB2 = response.data['ResultSet Output'][0];
