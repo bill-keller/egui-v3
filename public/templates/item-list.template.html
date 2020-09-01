@@ -30,10 +30,10 @@
     	<ul class="items"  style = "margin: 0px" >
 
     		<li ng-repeat="item in $ctrl.items | filter:$ctrl.query | orderBy:$ctrl.orderProp" class="thumbnail item-list-item">
-          <a href="#!/items/{{item.item_id}}" class="thumb">
-            <img ng-src="images/items/{{item.item_id}}.jpg"/>
+          <a href="#!/items/{{item.itemID}}" class="thumb">
+            <img ng-src="images/items/{{item.itemID}}.jpg"/>
           </a>
-          <a style="color: #2511FD;font-weight:bold" href="#!/items/{{item.item_id}}">{{item.description}}</a>
+          <a style="color: #2511FD;font-weight:bold" href="#!/items/{{item.itemID}}">{{item.description}}</a>
     			<p><span id="currency-default">{{item.cost | currency}}</span><br>
     		  Qty in stock: {{item.in_stock}}
           </p>

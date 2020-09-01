@@ -9,7 +9,7 @@ angular
       var self = this;
       self.orderProp = 'description';
       
-      $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:16598/catalog/items?startItemID=0010',
+      $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:16221/catalog/items?startItemID=0010',
       {
         headers: {Authorization: 'Basic YmtlbGxlcjpwYXNzdzByZA=='},
       }
