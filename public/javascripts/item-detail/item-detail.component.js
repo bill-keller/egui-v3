@@ -25,7 +25,7 @@ angular
 
         // #############################################
         // get inventory details from CICS applicaiton via REST API call to z/OS Connect
-        $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:16221/catalog/items/' + $routeParams.itemId,
+        $http.get('http://cap-sg-prd-4.securegateway.appdomain.cloud:20428/catalog/items/' + $routeParams.itemId,
           {
             headers: {Authorization: 'Basic YmtlbGxlcjpwYXNzdzByZA=='},
           } 
@@ -37,7 +37,7 @@ angular
 
         // #############################################
         // get shipping information from VSAM file via REST API call to z/OS Connect and DVM
-        $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:16221/catalog_shipping/itemShipping?ITEMID=' + $routeParams.itemId,
+        $http.get('http://cap-sg-prd-4.securegateway.appdomain.cloud:20428/catalog_shipping/itemShipping?ITEMID=' + $routeParams.itemId,
           {
             headers: {Authorization: 'Basic YmtlbGxlcjpwYXNzdzByZA=='},
           }
@@ -49,7 +49,7 @@ angular
 
         // #############################################
         // get device dimensions from DB2 z/OS via REST API call to z/OS Connect and DB2 z/OS
-        $http.get('http://cap-sg-prd-2.integration.ibmcloud.com:16221/catalog_device_dimensions/devices/' + $routeParams.itemId,
+        $http.get('cap-sg-prd-4.securegateway.appdomain.cloud:20428/catalog_device_dimensions/devices/' + $routeParams.itemId,
          {
             headers: {Authorization: 'Basic YmtlbGxlcjpwYXNzdzByZA=='},
          }  
