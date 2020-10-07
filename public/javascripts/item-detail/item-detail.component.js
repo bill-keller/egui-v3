@@ -49,7 +49,7 @@ angular
 
         // #############################################
         // get device dimensions from DB2 z/OS via REST API call to z/OS Connect and DB2 z/OS
-        $http.get('cap-sg-prd-4.securegateway.appdomain.cloud:20428/catalog_device_dimensions/devices/' + $routeParams.itemId,
+        $http.get('http://cap-sg-prd-4.securegateway.appdomain.cloud:20428/catalog_device_dimensions/devices/' + $routeParams.itemId,
          {
             headers: {Authorization: 'Basic YmtlbGxlcjpwYXNzdzByZA=='},
          }  
