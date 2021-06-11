@@ -14,7 +14,7 @@ To recreate this sample environment on your pc:
 	https://nodejs.org/en/
 	https://bower.io/#install-bower
 
-- clone the git repository --> "git clone https://github.com/bill-keller/egui.git"
+- clone the git repository --> "git clone https://github.com/bill-keller/egui-v3.git"
 
 - run the npm and bower installs:
 

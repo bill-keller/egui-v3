@@ -7,10 +7,10 @@ WORKDIR /usr/src/app
 # Install app dependencies
 COPY package.json /usr/src/app/
 RUN npm install
-ENV PORT 3001
+ENV PORT 3000
 # Bundle app source
 COPY . /usr/src/app
 
-EXPOSE 3001
+EXPOSE 3000
 
 CMD [ "npm", "start" ]
