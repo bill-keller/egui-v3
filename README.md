@@ -1,8 +1,8 @@
 # egui
 
-This sample JavaScript application demonstrates using AngularJS/Express/Node.js to access data from a z/OS system (CICS/VSAM) using REST APIs. The goal is show how easy it is to incorporate z/OS application data into an existing Node.js application using RESTful APIs and that z/OS application data can be accessed and used just like REST/JSON applications on any other platform.
+This sample JavaScript application demonstrates using AngularJS/Express/Node.js to access data from a z/OS system (CICS/Cobol program, DB2 z/OS Database, and DVM/VSAM Virtual Table) using REST APIs. The goal is show how easy it is to incorporate z/OS application data into an existing Node.js application using RESTful APIs and that z/OS application data can be accessed and used just like REST/JSON applications on any other platform.
 
-The backend CICS application is the Catalog Manager sample Cobol application which has been REST API enabled using z/OS Connect Enterprise Edition and is called through a Bluemix SecureGateway Service.
+The backend CICS application is the Catalog Manager sample Cobol application which has been REST API enabled using z/OS Connect Enterprise Edition. Additional data from z/OS Connect APIs utilizing data from a DB2 z/OS database and from a DVM/VSAM Virtual Table have been incorporated to enhance the application. All of the z/OS Connect APIs are called through a Bluemix SecureGateway Service.
 
 The AngularJS structure of the application is based on the PhoneCat Tutorial app on the Angularjs.org site (https://docs.angularjs.org/tutorial).
 
